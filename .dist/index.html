@@ -1,0 +1,43 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sheila Pink's Profile</title>
+
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <header>
+    <h1>Sheila Pink's Profile</h1>
+  </header>
+
+  <section>
+    <img src="sheila.jpg" alt="Sheila Pink's profile picture">
+    <h1>Sheila Pink</h1>
+    <p>Web Developer</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod consequat justo, vel commodo urna auctor eu.</p>
+    <button onclick="showContact()">Contact Sheila</button>
+    <div id="contactInfo" style="display: none;">
+      <p>Email: sheila@example.com</p>
+      <p>Phone: +1 123-456-7890</p>
+    </div>
+  </section>
+
+  <script>
+    function showContact() {
+      var contactInfo = document.getElementById("contactInfo");
+      if (contactInfo.style.display === "none") {
+        contactInfo.style.display = "block";
+      } else {
+        contactInfo.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
